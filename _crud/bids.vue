@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       crudId: this.$uid(),
-      appMode : config('app.mode')
+      appMode: config('app.mode')
     }
   },
   computed: {
@@ -75,6 +75,17 @@ export default {
               loadOptions: {
                 apiRoute: 'apiRoutes.qauction.statusBid',
                 select: {label: 'name', id: 'value'}
+              }
+            },
+            auctionId: {
+              value: null,
+              type: 'select',
+              props: {
+                clearable: true,
+                label: this.$tr('iauctions.cms.auction')
+              },
+              loadOptions: {
+                apiRoute: 'apiRoutes.qauction.auctions'
               }
             }
           },
