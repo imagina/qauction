@@ -55,7 +55,7 @@ export default {
               type: 'html',
               columns: 'col-12',
               props: {
-                label: `${this.$tr('isite.cms.form.description')}*`,
+                label: `${this.$tr('iauctions.cms.description')}*`,
                 rules: [
                   val => !!val || this.$tr('isite.cms.message.fieldRequired')
                 ],

@@ -91,7 +91,7 @@ export default {
           },
           requestParams: {
             filter: this.appMode == 'iadmin' ? {} : {providerId: this.$store.state.quserAuth.userId},
-            include: 'provider,auction.category,fields'
+            include: 'provider,auction.category,fields,files'
           },
           actions: [
             {

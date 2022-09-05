@@ -18,8 +18,11 @@
   </master-modal>
 </template>
 <script>
+//Components
+import fileList from '@imagina/qsite/_components/master/fileList'
+
 export default {
-  components: {},
+  components: {fileList},
   data() {
     return {
       modal: {
@@ -84,11 +87,11 @@ export default {
             this.modal.data.push({
               ...field,
               label: field.label.replace('*', ''),
-              value: (fieldType != 'media') ? (fieldValue == null ? '-' : fieldValue) : [{
+              value: (fieldType != 'media') ? (fieldValue == null ? '-' : fieldValue) : (fieldFile ? [{
                 id: this.$uid(),
                 ...fieldFile,
                 filename: field.label,
-              }],
+              }] : []),
               fieldType: fieldType
             })
           })
