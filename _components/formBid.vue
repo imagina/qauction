@@ -113,8 +113,10 @@ export default {
           this.loading = false
           resolve(true)
         }).catch(error => {
-          this.loading = false
-          resolve(true)
+          this.$apiResponse.handleError(error, () => {
+            this.loading = false
+            resolve(true)
+          })
         })
       })
     },

@@ -246,7 +246,9 @@ export default {
 
           resolve(true)
         }).catch(error => {
-          resolve(true)
+          this.$apiResponse.handleError(error, () => {
+            resolve(true)
+          })
         })
       })
     },
@@ -266,7 +268,9 @@ export default {
           this.bids = response.data
           resolve(true)
         }).catch(error => {
-          resolve(true)
+          this.$apiResponse.handleError(error, () => {
+            resolve(true)
+          })
         })
       })
     },

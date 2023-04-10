@@ -174,8 +174,10 @@ export default {
           this.loading = false
           resolve(response.data)
         }).catch(error => {
-          this.loading = false
-          reject(error)
+          this.$apiResponse.handleError(error, () => {
+            this.loading = false
+            reject(error)
+          })
         })
       })
     },
@@ -221,8 +223,10 @@ export default {
           resolve(response.data)
           this.loading = false
         }).catch(error => {
-          reject(error)
-          this.loading = false
+          this.$apiResponse.handleError(error, () => {
+            reject(error)
+            this.loading = false
+          })
         })
       })
     },

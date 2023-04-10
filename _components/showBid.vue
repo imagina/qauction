@@ -98,7 +98,9 @@ export default {
 
           this.modal.loading = false
         }).catch(error => {
-          this.modal.loading = false
+          this.$apiResponse.handleError(error, () => {
+            this.modal.loading = false
+          })
         })
       }
     }
