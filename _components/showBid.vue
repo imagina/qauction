@@ -54,8 +54,8 @@ export default {
             value: parseInt(bidData.winner) ? this.$tr('isite.cms.label.yes') : this.$tr('isite.cms.label.no'),
           },
           {label: this.$tr('iauctions.cms.description'), value: bidData.description},
-          {label: this.$tr("isite.cms.form.createdAt"), value: this.$trd(bidData.createdAt)},
-          {label: this.$tr("isite.cms.form.updatedAt"), value: this.$trd(bidData.updatedAt)}
+          {label: this.$tr("isite.cms.form.createdAt"), value: this.$trd(bidData.createdAt, {type: 'long'})},
+          {label: this.$tr("isite.cms.form.updatedAt"), value: this.$trd(bidData.updatedAt, {type: 'long'})}
         ]
       }
 

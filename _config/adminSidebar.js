@@ -4,7 +4,7 @@ const pages = config('pages') // Get Pages from config
 export default [
   {
     title: 'iauctions.cms.sidebar.adminGroup',
-    icon: 'fas fa-gavel',
+    icon: 'fa-light fa-gavel',
     children: [
       pages.mainqauction.auctions,
       pages.mainqauction.bids,

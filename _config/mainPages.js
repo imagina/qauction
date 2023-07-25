@@ -9,7 +9,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iauctions.cms.sidebar.adminAuctions',
-    icon: 'fas fa-gavel',
+    icon: 'fa-light fa-gavel',
     subHeader: {
       refresh: true,
     }
@@ -24,7 +24,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iauctions.cms.sidebar.adminBids',
-    icon: 'far fa-hand-point-up',
+    icon: 'fa-light fa-hand-point-up',
     subHeader: {
       refresh: true,
     }
@@ -39,7 +39,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iauctions.cms.sidebar.adminCategories',
-    icon: 'fas fa-layer-group',
+    icon: 'fa-light fa-layer-group',
     subHeader: {
       refresh: true,
     }

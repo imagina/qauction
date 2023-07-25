@@ -59,14 +59,14 @@ export default {
               label: this.$tr("isite.cms.form.createdAt"),
               field: "createdAt",
               align: "left",
-              format: (val) => (val ? this.$trd(val) : "-"),
+              format: (val) => (val ? this.$trd(val, {type: 'long'}) : "-"),
             },
             {
               name: "updated_at",
               label: this.$tr("isite.cms.form.updatedAt"),
               field: "updatedAt",
               align: "left",
-              format: (val) => (val ? this.$trd(val) : "-"),
+              format: (val) => (val ? this.$trd(val, {type: 'long'}) : "-"),
             },
             {
               name: "actions",

@@ -106,14 +106,14 @@ export default {
             label: this.$tr("isite.cms.form.createdAt"),
             field: "createdAt",
             align: "left",
-            format: (val) => (val ? this.$trd(val) : "-"),
+            format: (val) => (val ? this.$trd(val, {type: 'long'}) : "-"),
           },
           {
             name: "updated_at",
             label: this.$tr("isite.cms.form.updatedAt"),
             field: "updatedAt",
             align: "left",
-            format: (val) => (val ? this.$trd(val) : "-"),
+            format: (val) => (val ? this.$trd(val, {type: 'long'}) : "-"),
           },
           {name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'left'},
         ],
@@ -194,8 +194,8 @@ export default {
             label: this.$tr('isite.cms.label.creator'),
             value: itemData.creator ? `${itemData.creator.firstName} ${itemData.creator.lastName}` : '-'
           },
-          {label: this.$tr("isite.cms.form.startDate"), value: this.$trd(itemData.startAt)},
-          {label: this.$tr("isite.cms.form.endDate"), value: this.$trd(itemData.endAt)},
+          {label: this.$tr("isite.cms.form.startDate"), value: this.$trd(itemData.startAt, {type: 'long'})},
+          {label: this.$tr("isite.cms.form.endDate"), value: this.$trd(itemData.endAt, {type: 'long'})},
           {label: this.$tr('isite.cms.form.type'), value: itemData.typeName},
           {label: this.$tr('isite.cms.form.category'), value: itemData.category.title},
           {label: this.$tr('isite.cms.label.department'), value: itemData.department.title},
@@ -204,8 +204,8 @@ export default {
             value: itemData.winner ? `${itemData.winner.firstName} ${itemData.winner.lastName}` : '-'
           },
           {label: this.$tr('isite.cms.label.description'), value: itemData.description},
-          {label: this.$tr("isite.cms.form.createdAt"), value: this.$trd(itemData.createdAt)},
-          {label: this.$tr("isite.cms.form.updatedAt"), value: this.$trd(itemData.updatedAt)}
+          {label: this.$tr("isite.cms.form.createdAt"), value: this.$trd(itemData.createdAt, {type: 'long'})},
+          {label: this.$tr("isite.cms.form.updatedAt"), value: this.$trd(itemData.updatedAt, {type: 'long'})}
         ]
 
         //Get form data
