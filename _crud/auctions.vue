@@ -131,7 +131,7 @@ export default {
             }
           },
           requestParams: {
-            include: 'category,department,winner,creator,fields'
+            include: 'category,department,winner,creator,fields,files'
           },
           actions: [
             {

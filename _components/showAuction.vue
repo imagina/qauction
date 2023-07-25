@@ -63,10 +63,11 @@
 //Component
 import showBidData from '@imagina/qauction/_components/showBid'
 import QCharts from '@imagina/qsite/_components/master/charts.vue'
+import fileList from '@imagina/qsite/_components/master/fileList'
 
 export default {
   name: "ShowAuction",
-  components: {showBidData, QCharts},
+  components: {showBidData, QCharts, fileList},
   data() {
     return {
       appMode: config('app.mode'),
