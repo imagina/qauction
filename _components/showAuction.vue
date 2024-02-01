@@ -340,7 +340,7 @@ export default {
   }
 }
 </script>
-<style lang="sass">
+<style lang="scss">
 #showAuctionModal
   .q-tab-panels
     background transparent

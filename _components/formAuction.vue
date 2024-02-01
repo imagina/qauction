@@ -287,7 +287,7 @@ export default {
   }
 }
 </script>
-<style lang="sass">
+<style lang="scss">
 #fromAuctionComponent
   #dynamicFormComponent
     .q-option-group
