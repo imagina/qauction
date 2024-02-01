@@ -150,5 +150,5 @@ export default {
   }
 }
 </script>
-<style lang="stylus">
+<style lang="sass">
 </style>
