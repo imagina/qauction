@@ -341,17 +341,21 @@ export default {
 }
 </script>
 <style lang="scss">
-#showAuctionModal
-  .q-tab-panels
-    background transparent
+#showAuctionModal {
+  .q-tab-panels {
+    background: transparent;
+  }
 
-  #tableBids
-    th
-      color $blue-grey
-      font-weight bold
-      font-size 13px !important
+  #tableBids {
+    th {
+      color: $blue-grey;
+      font-weight: bold;
+      font-size: 13px !important;
+    }
 
-    td
-      color #222222
-
+    td {
+      color: #222222;
+    }
+  }
+}
 </style>
