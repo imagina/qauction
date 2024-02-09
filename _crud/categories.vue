@@ -1,7 +1,7 @@
 <template></template>
 <script>
 //Component
-import crud from "@imagina/qcrud/_components/crud";
+import crud from "modules/qcrud/_components/crud";
 
 export default {
   data() {
@@ -96,7 +96,7 @@ export default {
             type: "crud",
             props: {
               crudType: "select",
-              crudData: import("@imagina/qform/_crud/crudForms"),
+              crudData: import("modules/qform/_crud/crudForms"),
               crudProps: {
                 label: this.$tr("iauctions.cms.auctionForm"),
               },
@@ -112,7 +112,7 @@ export default {
             type: "crud",
             props: {
               crudType: "select",
-              crudData: import("@imagina/qform/_crud/crudForms"),
+              crudData: import("modules/qform/_crud/crudForms"),
               crudProps: {
                 label: this.$tr("iauctions.cms.bidForm"),
               },
