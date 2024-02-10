@@ -112,7 +112,7 @@ export default {
               type: 'crud',
               props: {
                 crudType: 'select',
-                crudData: import('@imagina/quser/_crud/departments'),
+                crudData: import('modules/quser/_crud/departments'),
                 crudProps: {
                   label: `${this.$trp('iprofile.cms.label.userGroup')}*`,
                   rules: [

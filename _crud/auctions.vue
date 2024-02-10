@@ -10,9 +10,9 @@
 </template>
 <script>
 //Component
-import formAuction from '@imagina/qauction/_components/formAuction'
-import formBid from '@imagina/qauction/_components/formBid'
-import showAuction from '@imagina/qauction/_components/showAuction'
+import formAuction from 'modules/qauction/_components/formAuction'
+import formBid from 'modules/qauction/_components/formBid'
+import showAuction from 'modules/qauction/_components/showAuction'
 
 export default {
   components: {formAuction, formBid, showAuction},

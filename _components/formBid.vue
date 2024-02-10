@@ -18,7 +18,7 @@
 </template>
 <script>
 //Component
-import showBidData from '@imagina/qauction/_components/showBid'
+import showBidData from 'modules/qauction/_components/showBid'
 
 export default {
   props: {},

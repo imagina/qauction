@@ -61,9 +61,9 @@
 </template>
 <script>
 //Component
-import showBidData from '@imagina/qauction/_components/showBid'
-import QCharts from '@imagina/qsite/_components/master/charts.vue'
-import fileList from '@imagina/qsite/_components/master/fileList'
+import showBidData from 'modules/qauction/_components/showBid'
+import QCharts from 'modules/qsite/_components/master/charts.vue'
+import fileList from 'modules/qsite/_components/master/fileList'
 
 export default {
   name: "ShowAuction",
