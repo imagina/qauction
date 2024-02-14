@@ -5,6 +5,7 @@
   </master-modal>
 </template>
 <script>
+import { eventBus } from 'src/plugins/utils'
 export default {
   props: {},
   components: {},
@@ -267,7 +268,7 @@ export default {
           //Reset data
           this.clear()
           //Emit event to refrsh crud
-          this.$root.$emit('crud.data.refresh')
+          eventBus.emit('crud.data.refresh')
           //Hidden loading
           this.loading = false
         }).catch(error => {
