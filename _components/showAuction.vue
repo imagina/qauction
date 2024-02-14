@@ -64,6 +64,7 @@
 import showBidData from 'modules/qauction/_components/showBid'
 import QCharts from 'modules/qsite/_components/master/charts.vue'
 import fileList from 'modules/qsite/_components/master/fileList'
+import { eventBus } from 'src/plugins/utils'
 
 export default {
   name: "ShowAuction",
@@ -325,7 +326,7 @@ export default {
               this.$crud.update('apiRoutes.qauction.bids', bid.id, requestData).then(response => {
                 this.$alert.info({message: `${this.$tr('isite.cms.message.recordCreated')}`})
                 //Emit event to refrsh crud
-                this.$root.$emit('crud.data.refresh')
+                eventBus.emit('crud.data.refresh')
                 this.modal.loading = false
                 this.modal.show = false
               }).catch(error => {

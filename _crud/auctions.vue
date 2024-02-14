@@ -13,6 +13,7 @@
 import formAuction from 'modules/qauction/_components/formAuction'
 import formBid from 'modules/qauction/_components/formBid'
 import showAuction from 'modules/qauction/_components/showAuction'
+import { eventBus } from 'src/plugins/utils'
 
 export default {
   components: {formAuction, formBid, showAuction},
@@ -185,7 +186,7 @@ export default {
                         this.$crud.update('apiRoutes.qauction.auctions', item.id, requestData).then(response => {
                           this.$alert.info({message: `${this.$tr('isite.cms.message.recordCreated')}`})
                           //Emit event to refrsh crud
-                          this.$root.$emit('crud.data.refresh')
+                          eventBus.emit('crud.data.refresh')
                         }).catch(error => {
                           this.$alert.error({message: `${this.$tr('isite.cms.message.recordNoCreated')}`})
                         })
