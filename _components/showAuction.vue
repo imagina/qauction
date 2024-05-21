@@ -119,7 +119,7 @@ export default {
           },
           {name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'left'},
         ],
-        data: this.bids
+        rows: this.bids
       }
     },
     //set chart's labels
